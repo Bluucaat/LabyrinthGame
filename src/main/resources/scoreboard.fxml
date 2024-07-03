@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="700" prefWidth="900" stylesheets="@scoreboard.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labyrinth.menu.ScoreBoardController">
+
+    <center>
+        <TableView fx:id="scoreboardTable" prefHeight="300" prefWidth="500">
+            <columns>
+                <TableColumn fx:id="usernameColumn" prefWidth="92.0" text="Username" />
+                <TableColumn fx:id="movesColumn" prefWidth="99.0" text="Moves" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <Button fx:id="backButton" onAction="#back" prefHeight="40.0" prefWidth="66.0" text="Back" />
+    </bottom>
+
+</BorderPane>

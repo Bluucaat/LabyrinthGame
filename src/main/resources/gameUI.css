@@ -1,0 +1,19 @@
+.square {
+    -fx-border-style: solid;
+    -fx-border-color: grey;
+}
+
+.square:hover {
+    -fx-background-color: #F0E9D6;
+}
+
+.gates{
+    -fx-background-color: red;
+    -fx-border-color: white;
+}
+
+.wall {
+    -fx-background-color: black;
+    -fx-border-style: solid;
+    -fx-border-color: grey;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="labyrinth.menu.MenuController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" stylesheets="@menu.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="CENTER" spacing="40.0">
+         <padding>
+            <Insets top="50" right="50" bottom="50" left="50"/>
+         </padding>
+         <Label text="The Labyrinth Puzzle" style="-fx-font-family: 'Arial'; -fx-font-size: 48; -fx-text-fill: #333; -fx-font-variant: small-caps;"/>
+         <HBox alignment="CENTER" spacing="20.0">
+            <Label text="Enter Player name:" style="-fx-font-size: 24;"/>
+            <TextField fx:id="playerInput" prefHeight="40.0" prefWidth="300.0"/>
+         </HBox>
+         <VBox alignment="CENTER" spacing="20.0">
+            <Button fx:id="startButton" text="Start" onAction="#startAction" prefHeight="60.0" prefWidth="200.0" style="-fx-font-size: 24;"/>
+            <Button fx:id="scoreboardButton" onAction="#openScoreboard" text="Scoreboard" prefHeight="60.0" prefWidth="200.0" style="-fx-font-size: 24;"/>
+            <Button text="Exit" onAction="#handleExitButtonClicked" prefHeight="60.0" prefWidth="200.0" style="-fx-font-size: 24;"/>
+         </VBox>
+      </VBox>
+   </center>
+</BorderPane>

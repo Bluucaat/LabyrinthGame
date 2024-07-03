@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="150" prefWidth="250" spacing="10" stylesheets="@popup.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labyrinth.game.PopupController">
+
+<Label fx:id="resultLabel">
+      <font>
+         <Font size="24.0" />
+      </font></Label>
+
+    <Button fx:id="menuButton" onAction="#handleMenu" prefHeight="33.0" prefWidth="84.0" text="Menu" />
+    <Button fx:id="closeButton" onAction="#handleClose" prefHeight="34.0" prefWidth="82.0" text="Close" />
+</VBox>
